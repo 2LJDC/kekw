@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Madimi One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 300%;
+        color: white;
+        align-items: center;
+        justify-content: center;
+      }
+
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .spacer {
+        aspect-ratio: 900/600;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .layer {
+        background-image: url("./wave1.svg");
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <script>
+        function second(){
+            const typed2 = new Typed(".auto-type2", {
+        strings: ["get your own page today!"],
+        typeSpeed: 150,
+      });
+        }
+    </script>
+  </head>
+  <body>
+    <div class="spacer layer">
+      <section>
+        <p style="text-align: center"><h1><span class="auto-type"></span></h1></p>
+        <p><span class="auto-type2"></span></p>
+      </section>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed(".auto-type", {
+        strings: ["2LJDC Web-Development"],
+        typeSpeed: 150,
+      });
+      setTimeout(second, 5000)
+    </script>
+  </body>
+</html>
